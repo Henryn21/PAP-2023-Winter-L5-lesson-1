@@ -122,3 +122,12 @@ footer>p {
         max-width: 450px;
     }
 }
+
+/* Shows card */
+.show{
+    display: block;
+}
+/* Hides card */
+.hide{
+    display: none;
+}

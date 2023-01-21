@@ -13,13 +13,14 @@
         href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
         <img src="images/logo.png" id="logo" alt="Early Flying Machines">
-        <nav><a id="machine">All</a><a id="balloon">Balloon</a><a id="dirigible">Dirigible</a><a
-                id="glider">Glider</a><a id="plane">Aeroplane</a></nav>
+        <nav><a id="machine" onclick="reset()">All</a><a id="balloon" onclick="showCard(`balloon`)">Balloon</a><a id="dirigible" onclick="showCard(`dirigible`)">Dirigible</a><a
+                id="glider" onclick="showCard(`glider`)">Glider</a><a id="plane" onclick="showCard(`plane`)">Aeroplane</a></nav>
     </header>
     <main>
         <!-- Exercise 6 -->
@@ -85,7 +86,7 @@
         </div>
 
         <div class="machine dirigible">
-            <img src="images/dirigible-1878.jpeg">
+            <img src="images/derigibleCycle.jpg" alt="Derigible Cycle">
             <h3>Dirigicycle 1878</h3>
             <p>The dirigible is a gas-floatation powered ariship that could be steared, a marked improvement over
                 balloons which were subject to wind currents. Charles F. Ritchel called his machine the Dirigicycle, and
